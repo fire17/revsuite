@@ -41,6 +41,7 @@ FALLBACK = {
     "reap_done_immediately": True,
     "caveman_in_subagents": False,
     "close_out_report": "html",
+    "affirmations": "auto",
 }
 
 
@@ -126,6 +127,7 @@ def main() -> int:
     print(f"  reap done now   : {values['reap_done_immediately']}")
     print(f"  caveman in subs : {values['caveman_in_subagents']}")
     print(f"  close-out report: {values['close_out_report']}")
+    print(f"  affirmations    : {values['affirmations']}   (auto|on|off — /rev-affirm)")
     overrides = {k: v for k, v in source.items() if v not in ("fallback", "defaults")}
     if overrides:
         print("  overridden by   : " + ", ".join(f"{k} ← {v}" for k, v in sorted(overrides.items())))

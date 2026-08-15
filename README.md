@@ -5,7 +5,7 @@
 **The throttle for agentic parallelism.** One gearbox — `/rev` — that tells any Claude Code agent how hard to run, how many workflows to hold open, which models to spawn, and when to slow down. Preferences live in one file you edit; every agent honors them on its next call.
 
 [![install](https://img.shields.io/badge/install-one%20command-2ea44f?style=flat-square)](#install)
-[![skills](https://img.shields.io/badge/skills-23%20bundled-blue?style=flat-square)](#whats-in-the-box)
+[![skills](https://img.shields.io/badge/skills-25%20bundled-blue?style=flat-square)](#whats-in-the-box)
 [![deps](https://img.shields.io/badge/dependencies-python%203.11%2B%20stdlib-informational?style=flat-square)](#requirements)
 [![license](https://img.shields.io/github/license/fire17/revsuite?style=flat-square)](LICENSE)
 [![stars](https://img.shields.io/github/stars/fire17/revsuite?style=social)](https://github.com/fire17/revsuite)
@@ -30,6 +30,7 @@ That installs every skill, the preferences resolver, the preferences file, and o
 | `/rev down` | same skill — drop to stock linear pace and **stay there** until an explicit `/rev up` |
 | `/rev up <agent>` / `/rev down <agent>` | relay that order to the named agent; your own gear is unchanged |
 | `/rev-update` | invoke **rev-update** — re-read and re-activate the suite from disk, then adopt |
+| "you can do it!" / you catch yourself making excuses | invoke **rev-affirm** (`/affirm`) — believe, then name a NEW angle and keep going |
 | `/highest-rev` or `/highrev` | invoke **highest-rev** — the full HIGHREV fleet mode |
 
 Three rules that make you correct rather than merely fast:
@@ -73,6 +74,7 @@ Idempotent and non-destructive: existing skills are skipped (never clobbered), a
 | **`/workflow-model-guard`** | the model guard every spawn passes through, including the per-tier map |
 | **`rev-prefs.toml` + resolver** | your preferences: band, fleet size, models per tier, effort, toggles — plus named profiles and per-project overrides |
 | **no-caveman hook** | spawned subagents never inherit compressed "caveman" output styles, so their reports stay verifiable |
+| **`/affirm`** (rev-affirm) | the anti-quitting loop — self-belief plus a mandatory novel-move demand when you stall or hedge; never licenses dishonesty |
 | **16 dependency skills** | tracks, effort-set, highest-bar, identify, verify-teammate, wartable, unknowns, and friends — bundled so the suite works on a clean machine |
 
 ## Preferences

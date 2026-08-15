@@ -28,6 +28,10 @@ forbidden_models = ["opus-4.8", "sonnet", "haiku"]   # never, at tier 3
 teammate_effort  = "ultracode"                        # teammate self-raises to this
 
 # --- housekeeping ---
+affirmations          = "auto"  # positive self-affirmations mode: auto = self-trigger
+                                #   when an agent starts making excuses or keeps failing;
+                                #   "on" = keep it live throughout; "off" = only when the
+                                #   human says something encouraging
 reap_done_immediately = true    # done subagents closed same cycle, unasked
 caveman_in_subagents  = false   # spawned teammates never use caveman
 close_out_report      = "html"  # format teammates write before being reaped
