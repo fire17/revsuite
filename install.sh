@@ -39,6 +39,16 @@ else
   echo "prefs:    installed default $CLAUDE_DIR/rev-prefs.toml"
 fi
 
+# book payloads the quality-stack skills reference (master_engineering, fable_mind)
+BOOKS="$HOME/Creations/Lively"
+mkdir -p "$BOOKS/the_senior"
+for pair in "Fable-a-Fable.md:$BOOKS/Fable-a-Fable.md" "the_senior/MASTER_ENGINEERING.md:$BOOKS/the_senior/MASTER_ENGINEERING.md"; do
+  src="$HERE/payloads/Lively/${pair%%:*}"; dst="${pair##*:}"
+  if [ -e "$dst" ] && [ "$FORCE" != "--force" ]; then continue; fi
+  [ -e "$src" ] && cp "$src" "$dst"
+done
+echo "payloads: books at $BOOKS (skipped any that already existed)"
+
 # no-caveman-for-subagents hook + idempotent settings.json registration
 cp "$HERE/hooks/no-caveman-for-subagents.py" "$CLAUDE_DIR/hooks/no-caveman-for-subagents.py"
 python3 - "$CLAUDE_DIR" <<'PY'

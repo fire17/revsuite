@@ -1,0 +1,1 @@
+../fable_mind/SKILL.md

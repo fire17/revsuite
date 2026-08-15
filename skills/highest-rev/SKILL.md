@@ -158,8 +158,38 @@ later — or forgotten. The countermeasures are law:
 - [ ] `/wargame`
 - [ ] `/unknowns`
 - [ ] `/mindblown-fast`
+- [ ] `/mindblown` — the full auto super-harness with its confidence gate
+      (`deferred:` its execution phase runs as the mission's own work, not
+      during init)
 - [ ] `/engineering-principles-pro`
-- [ ] `/master_engineering`
+- [ ] `/master_engineering` — The Senior's book as design lens AND acceptance
+      criteria (needs its book payload; see the install note)
+- [ ] `/fable_mind` (alias `/fable`) — the FABLE MIND doctrine: the Loop, the
+      14-principle credo, token-economics and orchestration doctrine, the
+      sacred-words and ledger disciplines, honest calibration
+- [ ] `/darwin-skill` — the self-improvement loop engine that Phase 4.6's
+      DARWIN rounds actually run on (`deferred:` its loops run during the
+      mission, not at init)
+- [ ] `/tokenomics` — the budget counterweight: cost/context baseline at init,
+      re-read every gauge cycle (Phase 0.6 depends on this)
+- [ ] `/pyramid` (alias `/pyr`) — hierarchical orchestration structure.
+      🔴 PRECEDENCE: it prescribes sonnet helper subagents; under HIGHREV the
+      prefs' TIER MAP WINS (tier 3 = `tier3_model`, never a forbidden model).
+      Take its structure, never its model choices.
+- [ ] `/ripple` (alias `/rpl`) — publication ripple law: anything shipped
+      before, and anything referencing it, gets updated in the same pass
+- [ ] `/awesome-readme` (alias `/awr`) — the README bar for any public surface
+      this mission touches
+- [ ] `/gantry` + `/gantry-watch` — live fleet board backing the Phase 5.3
+      table (skip with a logged downgrade if unavailable)
+- [ ] `/improve20` — the timeboxed improvement heartbeat, the manual cell of
+      the darwin loop
+- [ ] `/progress-report` — honest mission reporting with the debt ledger
+- [ ] `/smart-trim` + `/throwaway-context` — context economy, a real quality
+      lever once many lanes run at once
+- [ ] **verification gates (built-ins, no install):** `/code-review` ·
+      `/security-review` · `/simplify` — run them on what the fleet produces;
+      doctrine without a code-level review step is an opinion
 - [ ] ⏸ `/ponytail` — DEFERRED by law: builder subagents only, post-design,
       never the main agent (highest-bar Phase 6)
 - [ ] any skill the mission/vision names explicitly
@@ -309,8 +339,15 @@ The main agent does ORCHESTRATION, not line work. Its continuous loop:
    lane holding or queued on a declared exclusive-resource token shows
    WAITING-TOKEN, which is NOT idleness. This table is the user's window into
    the fleet — a stale table is a defect.
-4. **Help.** A struggling subagent gets unblocked (SendMessage guidance, missing
-   context, a decision) before it burns cycles.
+4. **Help — and ENCOURAGE.** A struggling subagent gets unblocked (SendMessage
+   guidance, missing context, a decision) before it burns cycles. When the
+   struggle is not a missing fact but a flinch — excuses, hedging toward a
+   lesser result, "not possible", the same approach failing again — send it
+   `/affirm` (`/rev-affirm`) rather than a scolding: belief plus a demand for a
+   NEW angle. Do the same for yourself the moment you catch your own flinch;
+   agents produce better work when they are backed, and quitting is the only
+   move that guarantees the bad outcome. Gated by `affirmations` in the prefs
+   (`auto` default).
 5. **Push or recreate — the responsible agent acts.** If anything at ANY tier
    is idling or running below the fastest possible pace, the agent RESPONSIBLE
    for it must either successfully push it faster (unblock, refocus, add
@@ -488,8 +525,16 @@ HIGHREV is the default gear, not the only one. The user throttles it live:
   your own gear unchanged unless you are named, update the roster accordingly,
   and report who you reached. Ambiguous or unknown lane name → ask, never
   guess, never apply it to yourself by default. Bare `/rev` = rev UP.
+- **`/rev-collapse` (`/collapse`) — the third gear, neither up nor down.** Fold
+  every running workflow and subagent into ONE unified workflow that does it
+  all together (harvest their output into a carry-forward ledger FIRST so
+  nothing is wasted), close the superseded fleet after its close-out reports,
+  then max rev on the single next goal — or on autoresearch self-improvement
+  cycles if none is named. Persists until the user says otherwise. Use it when
+  sprawl, not capacity, has become the bottleneck.
 - **Not the same as SPIN-DOWN.** Down = paused and alive; spin-down = drained
-  and closed. Never reap a healthy lane just because the mode was throttled.
+  and closed; collapse = consolidated and still running wide, inside one
+  workflow. Never reap a healthy lane just because the mode was throttled.
 
 ## Phase 7 — Still-binding rails (rev changes speed, not law)
 
@@ -551,6 +596,7 @@ then, run §SPIN-DOWN and let the fleet rest.
 | the user asks you to close done subagents | close them, then fix the loop that let it happen — state what you changed | treat as a rev defect, not a request |
 | fleet table stale / gauge cycle missed | re-gauge every lane immediately, re-render before any other action | treat as an idle-capacity defect, log cause |
 | subagent not gauging its own workflows | SendMessage the recursive-gauge reminder, demand its own lane table | push-or-recreate per Phase 5.5 |
+| lane making excuses / same approach failing 2× | send `/affirm` — belief + a named NEW axis, several divergent attempts in parallel | if it still repeats the same shape, recreate the lane with a different framing |
 | lane idling / below fastest pace | responsible agent pushes it faster (unblock, refocus, add workflows) | recreate it intelligently — carry over logged state, never restart from zero |
 | workflow agent resolved to anything but claude-opus-5 | fix the script and relaunch that lane — never launch-then-fix | if an env pin or agentType forces 4.8, stop using that path under HIGHREV and log it |
 | `/rev down` received | stop new launches everywhere, tell every teammate, write the throttle roster to SWARM.md | let in-flight work land; never kill to slow down |

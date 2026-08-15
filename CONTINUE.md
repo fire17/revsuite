@@ -21,7 +21,11 @@ The pieces (all installed by `install.sh`):
 | preferences | `~/.claude/rev-prefs.toml` | `prefs/rev-prefs.toml` (template) |
 | resolver | `~/.claude/scripts/rev-prefs.py` | `scripts/rev-prefs.py` |
 | no-caveman hook | `~/.claude/hooks/no-caveman-for-subagents.py` + `settings.json` | `hooks/no-caveman-for-subagents.py` |
-| 16 dependency skills | `~/.claude/skills/*` | `skills/*` |
+| `/affirm` anti-quitting loop | `~/.claude/skills/rev-affirm/` (alias `affirm`) | `skills/rev-affirm`, `skills/affirm` |
+| `/priority` priorities ledger | `~/.claude/skills/rev-priority/` + `~/.claude/scripts/rev-priorities.py` | `skills/rev-priority`, `scripts/rev-priorities.py` |
+| `/collapse` consolidation gear | `~/.claude/skills/rev-collapse/` (alias `collapse`) | `skills/rev-collapse`, `skills/collapse` |
+| quality stack (impeccable, darwin-skill, tokenomics, ripple, awesome-readme, pyramid, gantry, improve20, …) | `~/.claude/skills/*` | `skills/*` (47 total incl. aliases) |
+| book payloads | `~/Creations/Lively/` | `payloads/Lively/` (installer places them) |
 
 Registry entries for the same work live at `~/Creations/{highest-rev,
 rev-reminder,rev-update,rev-prefs,no-caveman-subagents,workflow-model-guard}.md`.
@@ -40,6 +44,13 @@ rev-reminder,rev-update,rev-prefs,no-caveman-subagents,workflow-model-guard}.md`
   `/highest-rev`), the nested rev directive (Phase 2), and the standing
   close-done-subagents order are stored byte-exact, typos included
   (`parralel`, `IMPORTATNT`, `develompent`, `symultanious`). Never "fix" them.
+- **Affirmations are gated and bounded.** `/affirm` fires on encouragement or
+  self-detected flinching, but belief is only the opening move — the
+  novel-move demand (name the failed mechanism, the axis changed, why the next
+  attempt fails differently) plus an attempt ledger is what follows. It never
+  licenses dishonesty: no unobserved success claims, no softened tests, no
+  redefined "done", no hidden attempt counts. Toggle: `affirmations` in the
+  prefs (`auto` default).
 - **Tier map:** orchestrator → Fable teammates → **Opus 5 only** inside those
   teammates' workflows. Two silent-4.8 traps are documented: an
   `ANTHROPIC_MODEL` env pin (Zenith's worker env pins 4.8) and a custom
@@ -69,6 +80,8 @@ rev-reminder,rev-update,rev-prefs,no-caveman-subagents,workflow-model-guard}.md`
 - `/rev up` / `/rev down` propagation through a real multi-tier fleet.
 - `/rev-update` fired at a running fleet.
 - A per-project preferences override or a named profile used in a real run.
+- `/affirm` fired on a genuinely stuck lane (does the attempt ledger actually
+  change axes, or does it repeat the same shape?).
 - The tier-3 Opus 5 verification step observed on a real teammate's workflow.
 
 ## How to resume

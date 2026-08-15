@@ -1,6 +1,6 @@
 {
   "project": "RevSuite",
-  "mode": "FRESH",
+  "mode": "UPDATE",
   "created": "2026-08-15 13:13:04 +0300",
   "session_ids": [
     "4e08c44e-8cc9-4de4-99c8-d77685034ea0"
@@ -10,12 +10,12 @@
     {
       "dest": "skills/highest-rev/SKILL.md",
       "source": "/Users/magic/.claude/skills/highest-rev/SKILL.md",
-      "sha256": "60d9bba11870e88bd9c1bb09674fc50300d2122dcaf74ee34fef23c04bca9185"
+      "sha256": "d521873a56f9f2301bd9cefddbde3a0896fc282295a0394c66d24f6ad862663f"
     },
     {
       "dest": "skills/rev-reminder/SKILL.md",
       "source": "/Users/magic/.claude/skills/rev-reminder/SKILL.md",
-      "sha256": "bf056bd67f4d4668ae80ceb696aeaa7712a386a6f51a819b8eea6ad14d525aa9"
+      "sha256": "806f9afdcf446fcee82cc0b1a10010f2d1dd1062525c6e5b6e5af2139fb18916"
     },
     {
       "dest": "skills/rev-update/SKILL.md",
@@ -23,14 +23,49 @@
       "sha256": "acc308ddf34555866a05aab76730d7cab1b2410fc1d5d300afb7ae61190329ed"
     },
     {
+      "dest": "skills/rev-affirm/SKILL.md",
+      "source": "/Users/magic/.claude/skills/rev-affirm/SKILL.md",
+      "sha256": "e028baf5738c1eea8c1c5d6e1010b18260b7d7a2039c4791fb7da2eda10a01bf"
+    },
+    {
+      "dest": "skills/rev-collapse/SKILL.md",
+      "source": "/Users/magic/.claude/skills/rev-collapse/SKILL.md",
+      "sha256": "c9ede79239fb72671a5f7e04fe082cde00b70717d9b197a84c6e0006270b60b7"
+    },
+    {
+      "dest": "skills/rev-priority/SKILL.md",
+      "source": "/Users/magic/.claude/skills/rev-priority/SKILL.md",
+      "sha256": "0c15786f836f7b747a32fc6f8da82423947e68c26ac5c6fc337665bc4832f199"
+    },
+    {
       "dest": "skills/workflow-model-guard/SKILL.md",
       "source": "/Users/magic/.claude/skills/workflow-model-guard/SKILL.md",
       "sha256": "17cd75dd19321b5f8d0c179efbf5a517c6803c0f4e79d85a170c8f791dc8f049"
     },
     {
+      "dest": "skills/highest-bar/SKILL.md",
+      "source": "/Users/magic/.claude/skills/highest-bar/SKILL.md",
+      "sha256": "47831c071281561a7b7d166f3ace6c88e398064362ee04ce298be16cb0a36788"
+    },
+    {
+      "dest": "skills/highest-bar/test-prompts.json",
+      "source": "/Users/magic/.claude/skills/highest-bar/test-prompts.json",
+      "sha256": "90774d9528abfebff734bed1d97db089ef6411901a1b67336cfdd1dcfc205075"
+    },
+    {
+      "dest": "skills/highest-bar/assets/kickoff-message.md",
+      "source": "/Users/magic/.claude/skills/highest-bar/assets/kickoff-message.md",
+      "sha256": "27ec0a45947cbc70f4394b8240f93f216dbb54a3fac72bd23bc470c1aa5a4be6"
+    },
+    {
       "dest": "scripts/rev-prefs.py",
       "source": "/Users/magic/.claude/scripts/rev-prefs.py",
-      "sha256": "a7eee5ea6b59508d45ff25db09b895c1b0b56cdc4232f9fa159c9c0ac99d6344"
+      "sha256": "13e6b8496b470c02b793abb4309e86443e08c174c3dbf76920eaf966944abfe6"
+    },
+    {
+      "dest": "scripts/rev-priorities.py",
+      "source": "/Users/magic/.claude/scripts/rev-priorities.py",
+      "sha256": "912dc7009dfd92ae7ed325048d3f4f66a4927ee23bcb01585eb9af3a81fd2ffd"
     },
     {
       "dest": "hooks/no-caveman-for-subagents.py",
@@ -40,26 +75,34 @@
     {
       "dest": "prefs/rev-prefs.toml",
       "source": "/Users/magic/.claude/rev-prefs.toml",
-      "sha256": "ca8212437b250034821f386d839a7ed88bd35299ce1e4aadabfc6c2292bd0e87"
+      "sha256": "b4f7aa4c0380394e094497b4ef91fd6dc1e0d44bc4f4337eec03c843596b8047"
     }
   ],
   "conversation": [
     {
       "dest": "conversation/4e08c44e-8cc9-4de4-99c8-d77685034ea0.jsonl",
-      "sha256": "193306518524e4fb426bbe8dd9ab2b9042f9532e572e39e3772c8e7a2db6d475",
+      "sha256": "2dbdd56c3eb2eb27ea12169c99c322b56da34a20739ac8a931df246639d16414",
       "point_in_time": true
     },
     {
       "dest": "conversation/cship-4e08c44e-8cc9-4de4-99c8-d77685034ea0.json",
-      "sha256": "c155917386f689052796d1d44a827e9bd014b006ad94186bfa5515da78af53ea",
+      "sha256": "6f3f68a3c885b42fe9c7ddc2add0ac16ad4c1ac7731c25b66fa91ca2856e8a27",
       "point_in_time": true
     }
   ],
   "bundled_skills": [
-    ".DS_Store",
+    "affirm",
+    "awesome-readme",
+    "awr",
+    "collapse",
     "cship-data",
+    "darwin-skill",
     "effort-set",
     "engineering-principles-pro",
+    "fable",
+    "fable_mind",
+    "gantry",
+    "gantry-watch",
     "grand-start",
     "hba",
     "highest-bar",
@@ -67,13 +110,28 @@
     "highest-rev",
     "highrev",
     "identify",
+    "impeccable",
+    "improve20",
+    "master_engineering",
     "mindblown",
     "mindblown-fast",
     "ponytail",
+    "priority",
+    "progress-report",
+    "pyr",
+    "pyramid",
     "rev",
+    "rev-affirm",
+    "rev-collapse",
+    "rev-priority",
     "rev-reminder",
     "rev-sync",
     "rev-update",
+    "ripple",
+    "rpl",
+    "smart-trim",
+    "throwaway-context",
+    "tokenomics",
     "tracks",
     "unknowns",
     "verify-teammate",
@@ -82,15 +140,16 @@
     "workflow-model-guard"
   ],
   "delta_set": {
-    "note": "first save \u2014 everything is new",
+    "note": "rev-priority + rev-collapse + quality stack expansion (darwin/tokenomics/ripple/awesome-readme/pyramid/impeccable/gantry/improve20/progress-report/trim) + book payloads",
     "files": [
       "skills/highest-rev/SKILL.md",
       "skills/rev-reminder/SKILL.md",
-      "skills/rev-update/SKILL.md",
-      "skills/workflow-model-guard/SKILL.md",
-      "scripts/rev-prefs.py",
-      "hooks/no-caveman-for-subagents.py",
-      "prefs/rev-prefs.toml"
+      "skills/rev-collapse/SKILL.md",
+      "skills/rev-priority/SKILL.md",
+      "skills/highest-bar/SKILL.md",
+      "skills/highest-bar/test-prompts.json",
+      "skills/highest-bar/assets/kickoff-message.md",
+      "scripts/rev-priorities.py"
     ]
   },
   "last_shipped": null,
@@ -98,5 +157,10 @@
   "excluded": {
     "~/.claude/settings.json": "may hold machine-specific permissions; install.sh recreates the hook entries",
     "scratchpad": "transient test dirs"
-  }
+  },
+  "updated": "2026-08-15 14:03:42 +0300",
+  "payloads": [
+    "payloads/Lively/Fable-a-Fable.md",
+    "payloads/Lively/the_senior/MASTER_ENGINEERING.md"
+  ]
 }

@@ -1,0 +1,18 @@
+timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
+2026-07-08T14:35	297f159	watch	-	-	keep	P0-runtime	red-light 3 hits README (wrong-repo installs, single-runtime paths, false no-config claim) -> fixed, rescan clean	full_test
+2026-07-08T15:25	baseline	watch	-	80.6	baseline	-	2 blind opus judges both 59.9/76 identical scores; dim8 20.7/23 live (2 full tests); weakest dim4=4 dim9=5 dim6=6 (whisper.py ref stale)	full_test
+2026-07-08T15:45	4f9c8ae	watch	80.6	-	keep	dim6	whisper.py->local_whisper.py ref fix, 7/7 paths verified	full_test
+2026-07-08T15:45	5825eac	watch	-	-	keep	dim9	dedicated Do-NOT anti-pattern section (7 red-light items)	full_test
+2026-07-08T15:45	2a0130d	watch	-	87.6	keep	dim4	2x visual CHECKPOINT (token-burner/>30min + rm -rf); ratchet re-judge 66.9/76 vs 59.9 (+7.0) KEEP	full_test
+2026-07-08T15:55	5708f5c	watch	87.6	90.1	keep	dim1	WHEN/triggers in description (629ch) + homepage/repo->bradautomates; cycle-2 re-judge 69.4/76 (+2.5) KEEP; HL-4 stop (delta shrinking, 2 cycles done)	full_test
+2026-07-08T16:20	33f7c1d	watch	90.1	88.9	revert	dim7	dedup local-msg 8->5 but fresh judge 68.2/76 vs 69.4 (-1.2): different redundancy flagged, ceiling noise. HL-4 confirmed: at optimum, reverted via git revert	full_test
+2026-07-08T16:50	4348404	watch	67.6	67.3	revert	dim7	panel A67.0/B67.6 mean 67.3 vs 67.6: pointer-style consolidation insufficient + Do-NOT merge cost dim9; new levers: caps-table dupe, 1.5GB dl gate, parse/decline branches	full_test
+2026-07-08T17:05	d9093e6	watch	67.6	67.6	keep	dim7	panel A68.2/B67.0 mean 67.6 TIE: tiebreak=size (-8 lines, C2-flagged dupes gone) — keep; consensus next: detail-mode stated 3x (Step0 pref/limits/flags)	full_test
+2026-07-08T17:20	4216b9c	watch	67.6	67.9	keep	dim7	panel A68.2/B67.6 mean 67.9 (+0.3) KEEP: Step-0 mode-dupe collapsed; composite 90.9	full_test
+2026-07-08T17:35	a3470f1	watch	67.9	68.2	keep	dim5	worked example: FINAL panel A68.2/B68.2 unanimous (+0.3) KEEP; goal run ends: composite 91.2/100 (68.2 + dim8 23.0)	full_test
+2026-07-08T18:05	00f908d	watch	68.2	69.4	keep	ALL(P2.5)	Phase-2.5 residual-elimination: ORIGINAL-prompt control 69.4 (+1.2 real, dim3=10 cites new branches); calibrated 3-judge panel 71.9/74.8/74.8 mean 73.8 (prompt-effect +4.4 disclosed); composite orig-protocol 92.4, calibrated 96.8	full_test
+2026-07-13T17:40	no-git-bak	highest-bar	-	60.4	baseline	-	dim3=3 dim9=4 dim4=4 weakest; runtime_warn=1 accepted(alias abs-path); dim8=8 (2 full tests, with>base both)	full_test
+2026-07-13T17:47	no-git-r1	highest-bar	60.4	81.1	keep	dim3+dim9+dim4+dim5 (judge-prescribed cluster)	2 fresh judges 62.9/62.5 structural (was 42.0); dim8 carried 8/10; failure table + blacklist + checkpoints + budgets	full_test
+2026-07-13T17:50	no-git-r2	highest-bar	81.1	82.5	keep	dim4(vision-hash gate)+dim2(phase artifacts)	judge-r2 64.1 structural; HL-4 top-out (Δ1.4<2) → stop; post-score micro-fixes SWARM.md/DARWIN.md applied unscored	full_test
+2026-07-13T18:20	no-git-bak	ladder-abstraction	-	81.0	baseline	-	structural 62.6 (dim1=6 desc>1024, dim4=7); dim8=8 (2 full tests, with>base); 6-reviewer wave found 30 fixes	full_test
+2026-07-13T18:45	no-git-r1	ladder-abstraction	81.0	82.5	keep	6-lens cluster (30 fixes: typed specs, adapters, 12 laws)	judges 66.8/61.4 mean 64.1 (was 62.6); Δ1.5 top-out; post-score correctness fixes (poison example, evidence locator, per-medium bars) unscored	full_test

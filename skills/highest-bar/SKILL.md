@@ -36,6 +36,11 @@ Do not miss a single one:
 - [ ] `/wargame` — think 10+ moves ahead; premortem, red-team, build the oracle
 - [ ] `/unknowns` — the blind-spot hunt: unknown-unknowns surfaced into UNKNOWNS.md
 - [ ] `/mindblown-fast` — the auto super-harness with the confidence gate
+- [ ] `/mindblown` — the full auto super-harness (⏸ its EXECUTION phase is
+      deferred to the mission itself; activation here binds the doctrine only)
+- [ ] `/fable_mind` (alias `/fable`) — the FABLE MIND doctrine: the Loop, the
+      14-principle credo, orchestration + token-economics doctrine, the
+      sacred-words and ledger disciplines, honest calibration
 - [ ] `/engineering-principles-pro` — the polished doctrine as live constraints
 - [ ] `/master_engineering` — The Senior's book as design lens + acceptance criteria
 - [ ] `/ponytail` — ⏸ DEFERRED, builders only: never activated at kickoff or in the
@@ -52,6 +57,8 @@ ACTIVATION LEDGER — <project>
 ✅ /wargame                          activated …
 ✅ /unknowns                         activated …
 ✅ /mindblown-fast                   activated …
+✅ /mindblown                        activated (execution deferred to the mission)
+✅ /fable_mind                       activated …
 ✅ /engineering-principles-pro       activated …
 ✅ /master_engineering               activated …
 ⏸ /ponytail                         DEFERRED — builder subagents only, post-design

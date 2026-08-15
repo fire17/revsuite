@@ -163,3 +163,12 @@ Then do the thing you just said. The report is not the work.
 > Guidelines changed since you loaded them? Run `/rev-update` (alias
 > `/rev-sync`) — it re-reads the rev skills from disk and makes you adopt the
 > new rules immediately.
+>
+> Sprawled across many workflows and lanes when one focused push would do?
+> Run `/rev-collapse` (`/collapse`) — harvest everything so nothing is wasted,
+> fold it all into ONE workflow, close the rest, then max rev on the next thing.
+>
+> Stuck, hedging, or hearing yourself make excuses? Run `/affirm`
+> (`/rev-affirm`) — self-belief plus a mandatory new angle, so the next attempt
+> can fail differently. Widening the band is the fuel: divergent attempts in
+> parallel beat sequential retries of the same idea.
