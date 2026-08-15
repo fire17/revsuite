@@ -1,0 +1,1 @@
+../highest-bar-abstract/SKILL.md

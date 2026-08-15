@@ -1,0 +1,1 @@
+../wartable/SKILL.md

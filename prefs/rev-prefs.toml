@@ -1,0 +1,65 @@
+# ~/.claude/rev-prefs.toml — fire17's REV PREFERENCES
+#
+# THE authority for every number, model, and toggle in the rev suite
+# (/rev, /rev-reminder, /rev-update, /highest-rev, /workflow-model-guard).
+# The skills read THIS FILE at run time; their prose only documents the
+# defaults. Edit here and every agent that invokes a rev skill picks it up on
+# its next call — no skill edits, no re-deploy, nothing to remember.
+#
+# Resolution order (later wins):
+#   defaults  <  [profiles.<name>]  <  [projects."<path prefix>"]  <  what
+#   the user says live in the conversation
+#
+# Read the resolved values with:
+#   python3 ~/.claude/scripts/rev-prefs.py            # for the current cwd
+#   python3 ~/.claude/scripts/rev-prefs.py --profile conserve --json
+
+[defaults]
+# --- parallelism band (live ultracode workflows per agent) ---
+workflow_floor   = 5      # never fewer than this while revved up
+workflow_ceiling = 10     # never stack past this
+fleet_min        = 12     # teammates a HIGHREV fleet aims for
+
+# --- models per tier (tier 1 = orchestrator, 2 = its teammates, 3 = agents
+#     spawned inside those teammates' dynamic workflows) ---
+tier2_model      = "fable"
+tier3_model      = "opus-5"
+forbidden_models = ["opus-4.8", "sonnet", "haiku"]   # never, at tier 3
+teammate_effort  = "ultracode"                        # teammate self-raises to this
+
+# --- housekeeping ---
+reap_done_immediately = true    # done subagents closed same cycle, unasked
+caveman_in_subagents  = false   # spawned teammates never use caveman
+close_out_report      = "html"  # format teammates write before being reaped
+
+# ---------------------------------------------------------------------------
+# PROFILES — named special cases. Ask for one by name ("use the conserve
+# profile", "/rev down" style work, a cheap experiment) and it layers over the
+# defaults. Add your own freely; unknown keys are ignored, missing keys inherit.
+# ---------------------------------------------------------------------------
+
+[profiles.conserve]
+# stretch a limit window without stopping work
+workflow_floor   = 1
+workflow_ceiling = 3
+fleet_min        = 2
+
+[profiles.solo]
+# one agent, no fleet — linear stock behavior
+workflow_floor   = 0
+workflow_ceiling = 1
+fleet_min        = 0
+
+[profiles.max]
+# everything the machine and account will carry
+workflow_floor   = 8
+workflow_ceiling = 16
+fleet_min        = 20
+
+# ---------------------------------------------------------------------------
+# PROJECTS — per-path overrides, keyed by path prefix (longest match wins).
+# Use for a repo that needs a different band, a cheaper tier, or a hard cap.
+# ---------------------------------------------------------------------------
+
+# [projects."~/Creations/ltx"]
+# workflow_ceiling = 8     # GPU-serialized project; less fan-out helps

@@ -1,0 +1,6 @@
+# The verbatim session transcript stays LOCAL — it is the /sas checkpoint half,
+# and it contains private conversation content, other sessions' internals, and
+# machine-specific paths. The snapshot keeps it at ~/Creations/RevSuite/conversation/.
+conversation/
+.DS_Store
+*.bak-*

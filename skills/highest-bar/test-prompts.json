@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "NEW PROJECT - PulseBoard - a personal finance dashboard that pulls my bank exports and shows me where money goes. /highest-bar — vision: i want to see my spending at any zoom level, get honest monthly reports, and it should be gorgeous. save this vision properly and kick it off right.",
+    "expected": "Saves the vision text verbatim as VISION.md (with hash), activates all 6 stack skills one by one with an activation ledger before building, plans ladder-of-abstraction zoom UX, tailored non-templated reports, dual showcase sites, zenith+swarm orchestration, darwin loops."
+  },
+  {
+    "id": 2,
+    "prompt": "starting a new project called notely, a note taking app. i want it done at the highest bar ever, best anyone has ever seen. here's my vision: fast capture, beautiful reading view, links between notes. go.",
+    "expected": "Triggers the protocol without explicit skill invocation: verbatim VISION.md preservation, full skill-stack activation ledger, award-grade design bar, performance doctrine, orchestration plan, self-improvement loops — all before writing code."
+  },
+  {
+    "id": 3,
+    "prompt": "/highest-bar new internal tool 'shipwatch' — track our team's deploys and flag risky ones. vision follows: honest live status page shareable with my manager, drill from fleet view down to a single deploy log, watch https://example.com/talk-on-calm-tech and use its ideas.",
+    "expected": "Verbatim vision save; activation ledger; ladder-of-abstraction drill-down (fleet→deploy) recognized as information architecture; separate honest stakeholder-shareable Development Showcase; inspiration media ingested via /watch before design; edge-case/real-data grounding."
+  }
+]

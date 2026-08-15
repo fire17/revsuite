@@ -1,0 +1,102 @@
+{
+  "project": "RevSuite",
+  "mode": "FRESH",
+  "created": "2026-08-15 13:13:04 +0300",
+  "session_ids": [
+    "4e08c44e-8cc9-4de4-99c8-d77685034ea0"
+  ],
+  "cwd": "/Users/magic/Creations",
+  "files": [
+    {
+      "dest": "skills/highest-rev/SKILL.md",
+      "source": "/Users/magic/.claude/skills/highest-rev/SKILL.md",
+      "sha256": "60d9bba11870e88bd9c1bb09674fc50300d2122dcaf74ee34fef23c04bca9185"
+    },
+    {
+      "dest": "skills/rev-reminder/SKILL.md",
+      "source": "/Users/magic/.claude/skills/rev-reminder/SKILL.md",
+      "sha256": "bf056bd67f4d4668ae80ceb696aeaa7712a386a6f51a819b8eea6ad14d525aa9"
+    },
+    {
+      "dest": "skills/rev-update/SKILL.md",
+      "source": "/Users/magic/.claude/skills/rev-update/SKILL.md",
+      "sha256": "acc308ddf34555866a05aab76730d7cab1b2410fc1d5d300afb7ae61190329ed"
+    },
+    {
+      "dest": "skills/workflow-model-guard/SKILL.md",
+      "source": "/Users/magic/.claude/skills/workflow-model-guard/SKILL.md",
+      "sha256": "17cd75dd19321b5f8d0c179efbf5a517c6803c0f4e79d85a170c8f791dc8f049"
+    },
+    {
+      "dest": "scripts/rev-prefs.py",
+      "source": "/Users/magic/.claude/scripts/rev-prefs.py",
+      "sha256": "a7eee5ea6b59508d45ff25db09b895c1b0b56cdc4232f9fa159c9c0ac99d6344"
+    },
+    {
+      "dest": "hooks/no-caveman-for-subagents.py",
+      "source": "/Users/magic/.claude/hooks/no-caveman-for-subagents.py",
+      "sha256": "9a3a97b4a8f6c258003635f9c37f6c69a6d899ffec87444f5d208e7ee8346848"
+    },
+    {
+      "dest": "prefs/rev-prefs.toml",
+      "source": "/Users/magic/.claude/rev-prefs.toml",
+      "sha256": "ca8212437b250034821f386d839a7ed88bd35299ce1e4aadabfc6c2292bd0e87"
+    }
+  ],
+  "conversation": [
+    {
+      "dest": "conversation/4e08c44e-8cc9-4de4-99c8-d77685034ea0.jsonl",
+      "sha256": "193306518524e4fb426bbe8dd9ab2b9042f9532e572e39e3772c8e7a2db6d475",
+      "point_in_time": true
+    },
+    {
+      "dest": "conversation/cship-4e08c44e-8cc9-4de4-99c8-d77685034ea0.json",
+      "sha256": "c155917386f689052796d1d44a827e9bd014b006ad94186bfa5515da78af53ea",
+      "point_in_time": true
+    }
+  ],
+  "bundled_skills": [
+    ".DS_Store",
+    "cship-data",
+    "effort-set",
+    "engineering-principles-pro",
+    "grand-start",
+    "hba",
+    "highest-bar",
+    "highest-bar-abstract",
+    "highest-rev",
+    "highrev",
+    "identify",
+    "mindblown",
+    "mindblown-fast",
+    "ponytail",
+    "rev",
+    "rev-reminder",
+    "rev-sync",
+    "rev-update",
+    "tracks",
+    "unknowns",
+    "verify-teammate",
+    "wargame",
+    "wartable",
+    "workflow-model-guard"
+  ],
+  "delta_set": {
+    "note": "first save \u2014 everything is new",
+    "files": [
+      "skills/highest-rev/SKILL.md",
+      "skills/rev-reminder/SKILL.md",
+      "skills/rev-update/SKILL.md",
+      "skills/workflow-model-guard/SKILL.md",
+      "scripts/rev-prefs.py",
+      "hooks/no-caveman-for-subagents.py",
+      "prefs/rev-prefs.toml"
+    ]
+  },
+  "last_shipped": null,
+  "version": null,
+  "excluded": {
+    "~/.claude/settings.json": "may hold machine-specific permissions; install.sh recreates the hook entries",
+    "scratchpad": "transient test dirs"
+  }
+}
