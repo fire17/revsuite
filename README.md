@@ -73,7 +73,7 @@ Idempotent and non-destructive: existing skills are skipped (never clobbered), a
 | **`/workflow-model-guard`** | the model guard every spawn passes through, including the per-tier map |
 | **`rev-prefs.toml` + resolver** | your preferences: band, fleet size, models per tier, effort, toggles — plus named profiles and per-project overrides |
 | **no-caveman hook** | spawned subagents never inherit compressed "caveman" output styles, so their reports stay verifiable |
-| **19 dependency skills** | tracks, effort-set, highest-bar, identify, verify-teammate, wartable, unknowns, and friends — bundled so the suite works on a clean machine |
+| **16 dependency skills** | tracks, effort-set, highest-bar, identify, verify-teammate, wartable, unknowns, and friends — bundled so the suite works on a clean machine |
 
 ## Preferences
 

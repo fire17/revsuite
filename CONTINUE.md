@@ -21,7 +21,7 @@ The pieces (all installed by `install.sh`):
 | preferences | `~/.claude/rev-prefs.toml` | `prefs/rev-prefs.toml` (template) |
 | resolver | `~/.claude/scripts/rev-prefs.py` | `scripts/rev-prefs.py` |
 | no-caveman hook | `~/.claude/hooks/no-caveman-for-subagents.py` + `settings.json` | `hooks/no-caveman-for-subagents.py` |
-| 19 dependency skills | `~/.claude/skills/*` | `skills/*` |
+| 16 dependency skills | `~/.claude/skills/*` | `skills/*` |
 
 Registry entries for the same work live at `~/Creations/{highest-rev,
 rev-reminder,rev-update,rev-prefs,no-caveman-subagents,workflow-model-guard}.md`.
