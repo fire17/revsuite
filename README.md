@@ -5,7 +5,7 @@
 **The throttle for agentic parallelism.** One gearbox — `/rev` — that tells any Claude Code agent how hard to run, how many workflows to hold open, which models to spawn, and when to slow down. Preferences live in one file you edit; every agent honors them on its next call.
 
 [![install](https://img.shields.io/badge/install-one%20command-2ea44f?style=flat-square)](#install)
-[![skills](https://img.shields.io/badge/skills-47%20bundled-blue?style=flat-square)](#whats-in-the-box)
+[![skills](https://img.shields.io/badge/skills-41%20bundled-blue?style=flat-square)](#whats-in-the-box)
 [![deps](https://img.shields.io/badge/dependencies-python%203.11%2B%20stdlib-informational?style=flat-square)](#requirements)
 [![license](https://img.shields.io/github/license/fire17/revsuite?style=flat-square)](LICENSE)
 [![stars](https://img.shields.io/github/stars/fire17/revsuite?style=social)](https://github.com/fire17/revsuite)
@@ -78,8 +78,8 @@ Idempotent and non-destructive: existing skills are skipped (never clobbered), a
 | **`/collapse`** (rev-collapse) | the consolidation gear — many workflows into one, nothing wasted, then maximum rev on a single goal (or autoresearch self-improvement cycles) |
 | **`/affirm`** (rev-affirm) | the anti-quitting loop — self-belief plus a mandatory novel-move demand when you stall or hedge; never licenses dishonesty |
 | **quality stack** | `/highest-bar` · `/impeccable` · `/mindblown` + `/mindblown-fast` · `/master_engineering` · `/fable_mind` · `/wargame` · `/unknowns` · `/engineering-principles-pro` · `/ponytail` — activated one by one by the init checklist |
-| **loops & economy** | `/darwin-skill` (the engine behind the darwin rounds) · `/improve20` · `/tokenomics` · `/smart-trim` · `/throwaway-context` |
-| **ship & observe** | `/ripple` · `/awesome-readme` · `/progress-report` · `/gantry` + `/gantry-watch` · `/pyramid` (structure only — the tier map still wins on models) |
+| **loops** | `/darwin-skill` — the engine behind the darwin self-improvement rounds. Token efficiency is a principle here, not a skill: spend on capability, never on ceremony |
+| **ship & report** | `/ripple` · `/awesome-readme` · `/progress-report` · `/pyramid` (structure only — the tier map still wins on models) |
 | **verification gates** | built-in `/code-review` · `/security-review` · `/simplify` — run on what the fleet produces |
 | **dependency skills + book payloads** | tracks, effort-set, identify, verify-teammate, cship-data and friends, plus the two ~95KB books `master_engineering` and `fable_mind` reference — installed to `~/Creations/Lively/` so both work out of the box |
 

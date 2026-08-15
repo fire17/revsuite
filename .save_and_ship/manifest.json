@@ -10,7 +10,7 @@
     {
       "dest": "skills/highest-rev/SKILL.md",
       "source": "/Users/magic/.claude/skills/highest-rev/SKILL.md",
-      "sha256": "d521873a56f9f2301bd9cefddbde3a0896fc282295a0394c66d24f6ad862663f"
+      "sha256": "5a9e9b831326397b4b5bdd62faebbb4df003966f386a21664e7ffe6e41fe0781"
     },
     {
       "dest": "skills/rev-reminder/SKILL.md",
@@ -81,7 +81,7 @@
   "conversation": [
     {
       "dest": "conversation/4e08c44e-8cc9-4de4-99c8-d77685034ea0.jsonl",
-      "sha256": "2dbdd56c3eb2eb27ea12169c99c322b56da34a20739ac8a931df246639d16414",
+      "sha256": "2b62ee09d5b71ee96f056404ec42b401e9c7717b15eaddbd65601ec71dde9145",
       "point_in_time": true
     },
     {
@@ -101,8 +101,6 @@
     "engineering-principles-pro",
     "fable",
     "fable_mind",
-    "gantry",
-    "gantry-watch",
     "grand-start",
     "hba",
     "highest-bar",
@@ -111,7 +109,6 @@
     "highrev",
     "identify",
     "impeccable",
-    "improve20",
     "master_engineering",
     "mindblown",
     "mindblown-fast",
@@ -129,9 +126,6 @@
     "rev-update",
     "ripple",
     "rpl",
-    "smart-trim",
-    "throwaway-context",
-    "tokenomics",
     "tracks",
     "unknowns",
     "verify-teammate",
@@ -140,16 +134,10 @@
     "workflow-model-guard"
   ],
   "delta_set": {
-    "note": "rev-priority + rev-collapse + quality stack expansion (darwin/tokenomics/ripple/awesome-readme/pyramid/impeccable/gantry/improve20/progress-report/trim) + book payloads",
+    "note": "quality stack trimmed per fire17: improve20/gantry/gantry-watch/smart-trim/throwaway-context/tokenomics removed; token efficiency is now a principle, not a skill",
     "files": [
       "skills/highest-rev/SKILL.md",
-      "skills/rev-reminder/SKILL.md",
-      "skills/rev-collapse/SKILL.md",
-      "skills/rev-priority/SKILL.md",
-      "skills/highest-bar/SKILL.md",
-      "skills/highest-bar/test-prompts.json",
-      "skills/highest-bar/assets/kickoff-message.md",
-      "scripts/rev-priorities.py"
+      "README.md"
     ]
   },
   "last_shipped": null,
@@ -158,7 +146,7 @@
     "~/.claude/settings.json": "may hold machine-specific permissions; install.sh recreates the hook entries",
     "scratchpad": "transient test dirs"
   },
-  "updated": "2026-08-15 14:03:42 +0300",
+  "updated": "2026-08-15 14:06:17 +0300",
   "payloads": [
     "payloads/Lively/Fable-a-Fable.md",
     "payloads/Lively/the_senior/MASTER_ENGINEERING.md"

@@ -55,11 +55,13 @@ the workflows it authors still set per-agent() effort deliberately (guard law).
    is the sanctioned exception, and take ONE explicit user confirmation before
    the first Fable spawn (once per session, logged on the ledger). The Zenith
    `ANTHROPIC_MODEL` pin stays opus regardless.
-6. Budget frame: the user has granted a huge development budget for this mode.
-   Tokenomics tracking stays ON — concretely: activate `/tokenomics`, record a
-   cost + context baseline (`/identify` or cship-data) on the ledger, and show
-   cost + 5h/7d limit % as a header line above the fleet table every gauge
-   cycle. Measure everything, economize nothing.
+6. Budget frame: the user has granted a huge development budget for this mode —
+   spend it on capability, never on waste. No tracking skill to activate; just
+   record a cost + context baseline (`/identify` or cship-data) on the ledger
+   and show cost + 5h/7d limit % above the fleet table each gauge cycle. **Be
+   as efficient and intelligent as possible per token**: buy parallel divergent
+   attempts and hard verification; do not buy ceremony — re-reading what you
+   already hold, restating what is already written, or lanes nobody needs.
 7. **Effort:** the MAIN agent raises ITSELF to ultracode at init too — it holds
    rev per Phase 3's trailing block, not just delegates it.
 
@@ -170,8 +172,12 @@ later — or forgotten. The countermeasures are law:
 - [ ] `/darwin-skill` — the self-improvement loop engine that Phase 4.6's
       DARWIN rounds actually run on (`deferred:` its loops run during the
       mission, not at init)
-- [ ] `/tokenomics` — the budget counterweight: cost/context baseline at init,
-      re-read every gauge cycle (Phase 0.6 depends on this)
+- [ ] **TOKEN EFFICIENCY — a principle, not a skill.** No tool to activate:
+      simply be as efficient and intelligent as possible per token. Every
+      spawn, workflow, and re-read costs; spend where it buys capability
+      (parallel divergent attempts, hard verification) and not on ceremony
+      (re-reading what you hold, restating what is written, lanes nobody
+      needs). High rev is not the same as high waste.
 - [ ] `/pyramid` (alias `/pyr`) — hierarchical orchestration structure.
       🔴 PRECEDENCE: it prescribes sonnet helper subagents; under HIGHREV the
       prefs' TIER MAP WINS (tier 3 = `tier3_model`, never a forbidden model).
@@ -180,13 +186,7 @@ later — or forgotten. The countermeasures are law:
       before, and anything referencing it, gets updated in the same pass
 - [ ] `/awesome-readme` (alias `/awr`) — the README bar for any public surface
       this mission touches
-- [ ] `/gantry` + `/gantry-watch` — live fleet board backing the Phase 5.3
-      table (skip with a logged downgrade if unavailable)
-- [ ] `/improve20` — the timeboxed improvement heartbeat, the manual cell of
-      the darwin loop
 - [ ] `/progress-report` — honest mission reporting with the debt ledger
-- [ ] `/smart-trim` + `/throwaway-context` — context economy, a real quality
-      lever once many lanes run at once
 - [ ] **verification gates (built-ins, no install):** `/code-review` ·
       `/security-review` · `/simplify` — run them on what the fleet produces;
       doctrine without a code-level review step is an opinion
