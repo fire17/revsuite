@@ -4,7 +4,9 @@
 
 # Time is money - /rev up!
 
-**The throttle for agentic parallelism.** One gearbox — `/rev` — that tells any Claude Code agent how hard to run, how many workflows to hold open, which models to spawn, and when to slow down. Preferences live in one file you edit; every agent honors them on its next call.
+### ⭐ `/highest-rev` is the main event — everything else is a lean satellite
+
+**`/highest-rev`** (alias `/highrev`) is the full mode: the init checklist that activates the whole quality stack one skill at a time, the adopt-existing-work phase, the fleet of Fable teammates each running many parallel workflows, the orchestrator loop, and spin-down. **Start there.** The other commands — `/rev`, `/collapse`, `/priority`, `/affirm`, `/rev-update` — are small, single-purpose gears you reach for mid-flight, and each works standalone without the mode loaded.
 
 [![install](https://img.shields.io/badge/install-one%20command-2ea44f?style=flat-square)](#install)
 [![skills](https://img.shields.io/badge/skills-41%20bundled-blue?style=flat-square)](#whats-in-the-box)
@@ -28,13 +30,14 @@ That installs every skill, the preferences resolver, the preferences file, and o
 
 | you are told | you do |
 |---|---|
+| **`/highest-rev` or `/highrev`** ⭐ | **invoke highest-rev — THE main skill.** Full fleet mode: activation checklist, adopt phase, orchestrator loop, spawn contract, spin-down. When in doubt, this is the one |
 | `/rev` or "rev up" | invoke the **rev-reminder** skill — it revs you up and answers the rev check |
 | `/rev down` | same skill — drop to stock linear pace and **stay there** until an explicit `/rev up` |
 | `/rev up <agent>` / `/rev down <agent>` | relay that order to the named agent; your own gear is unchanged |
 | `/rev-update` | invoke **rev-update** — re-read and re-activate the suite from disk, then adopt |
 | "you can do it!" / you catch yourself making excuses | invoke **rev-affirm** (`/affirm`) — believe, then name a NEW angle and keep going |
 | `/collapse` | invoke **rev-collapse** — harvest every lane, fold them into ONE workflow, close the rest, max rev on the next thing |
-| `/highest-rev` or `/highrev` | invoke **highest-rev** — the full HIGHREV fleet mode |
+| `/priority <goal>` | invoke **rev-priority** — record it verbatim in the ledger, judge every lane against it, collapse the misaligned, respawn |
 
 Three rules that make you correct rather than merely fast:
 
@@ -69,16 +72,29 @@ Idempotent and non-destructive: existing skills are skipped (never clobbered), a
 
 ## What's in the box
 
+### ⭐ The main skill
+
+| piece | what it does |
+|---|---|
+| **`/highest-rev`** (alias `/highrev`) | **THE mode.** Verify activation → load your preferences → ADOPT existing work → activate the whole quality stack one skill at a time → sequence the bar (budgets, IA, showcases, swarm roster) → run the orchestrator loop (gauge · help · reap · spawn · polish) → spin down cleanly. Everything below is a piece of this, usable on its own |
+
+### The lean gears — small, single-purpose, standalone
+
 | piece | what it does |
 |---|---|
 | **`/rev`** (rev-reminder) | the gearbox — bare `/rev` revs up, `/rev down` throttles, targets relay to named agents |
+| **`/collapse`** (rev-collapse) | many workflows into one, nothing wasted, then maximum rev on a single goal |
+| **`/priority`** (rev-priority) | the durable priorities ledger + judge-and-rebalance loop |
+| **`/affirm`** (rev-affirm) | the anti-quitting loop — belief plus a mandatory new angle |
 | **`/rev-update`** (alias `/rev-sync`) | doctrine resync — re-read + re-activate the suite, adopt immediately, propagate. Contains no copy of the rules, so it never goes stale |
-| **`/highest-rev`** (alias `/highrev`) | the full fleet mode — init checklist, adopt-existing-work phase, orchestrator loop, spawn contract, spin-down |
 | **`/workflow-model-guard`** | the model guard every spawn passes through, including the per-tier map |
+
+### What they all run on
+
+| piece | what it does |
+|---|---|
 | **`rev-prefs.toml` + resolver** | your preferences: band, fleet size, models per tier, effort, toggles — plus named profiles and per-project overrides |
 | **no-caveman hook** | spawned subagents never inherit compressed "caveman" output styles, so their reports stay verifiable |
-| **`/collapse`** (rev-collapse) | the consolidation gear — many workflows into one, nothing wasted, then maximum rev on a single goal (or autoresearch self-improvement cycles) |
-| **`/affirm`** (rev-affirm) | the anti-quitting loop — self-belief plus a mandatory novel-move demand when you stall or hedge; never licenses dishonesty |
 | **quality stack** | `/highest-bar` · `/impeccable` · `/mindblown` + `/mindblown-fast` · `/master_engineering` · `/fable_mind` · `/wargame` · `/unknowns` · `/engineering-principles-pro` · `/ponytail` — activated one by one by the init checklist |
 | **loops** | `/darwin-skill` — the engine behind the darwin self-improvement rounds. Token efficiency is a principle here, not a skill: spend on capability, never on ceremony |
 | **ship & report** | `/ripple` · `/awesome-readme` · `/progress-report` · `/pyramid` (structure only — the tier map still wins on models) |
