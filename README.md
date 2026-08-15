@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="RevSuite — Time is money - rev up!" width="820">
+<img src="assets/banner.svg" alt="RevSuite — Time is money - /rev up!" width="820">
 
-# Time is money - rev up!
+# Time is money - /rev up!
 
 **The throttle for agentic parallelism.** One gearbox — `/rev` — that tells any Claude Code agent how hard to run, how many workflows to hold open, which models to spawn, and when to slow down. Preferences live in one file you edit; every agent honors them on its next call.
 

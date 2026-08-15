@@ -43,7 +43,7 @@
   <!-- wordmark -->
   <g transform="translate(246,0)">
     <text x="0" y="94" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="56" font-weight="700" fill="#f2f6ff" letter-spacing="-1.2">Rev<tspan fill="#a78bfa">Suite</tspan></text>
-    <text x="2" y="128" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="26" font-weight="600" fill="#7fe7f3">Time is money - rev up!</text>
+    <text x="2" y="128" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="26" font-weight="600" fill="#7fe7f3">Time is money - /rev up!</text>
     <text x="2" y="152" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#9fb2d4">the throttle for agentic parallelism</text>
     <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" fill="#7fe7f3">
       <rect x="0" y="172" width="88" height="30" rx="8" fill="#0f1a2e" stroke="#22405e"/>
